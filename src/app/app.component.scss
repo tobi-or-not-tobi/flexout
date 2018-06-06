@@ -1,0 +1,15 @@
+.demo .fl {
+    border: dashed 1px grey;
+    margin-top: 10px;
+
+    > * {
+        padding: 20px;
+        border: solid 5px #fff;
+        // box-sizing: border-box;
+        min-width: 20px;
+        min-height: 20px;
+        text-align: center;
+        color: #fff;
+        background-color: rebeccapurple;
+    }
+}

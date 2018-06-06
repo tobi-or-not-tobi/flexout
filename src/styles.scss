@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.fl {
+    display: flex;
+    // align-content: center;
+    // justify-content: space-between;
+    .space-before {
+        margin-left: auto;
+        &.rem5 {
+            margin-left: 5rem;
+        }
+    }
+}
