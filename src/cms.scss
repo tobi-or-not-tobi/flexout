@@ -1,0 +1,32 @@
+@import './cms-flexbox';
+
+.page {
+    padding: 10px;
+    margin: 10px;
+    background-color: #ddd;
+    .slot {
+        border: solid 1px #aaa;
+        padding: 10px;
+        background-color: #fff;
+        &::before {
+            content: 'slot';
+            font-size: 0.7em;
+            padding: 0 10px;
+        }
+        .component {
+            padding: 10px;
+            background-color: #ddd;
+            border: solid 1px #aaa;
+            &::before {
+                content: 'component';
+                font-size: 0.7em;
+                padding: 0 10px;
+            }
+        }
+    }
+
+    &::before {
+        content: 'page:';
+        font-size: 0.7em;
+    }
+}

@@ -1,18 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import './cms';
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.fl {
-    display: flex;
-    // align-content: center;
-    // justify-content: space-between;
-    .space-before {
-        margin-left: auto;
-        &.rem5 {
-            margin-left: 5rem;
-        }
-    }
-    .space-after {
-        margin-right: auto;
+
+div.break {
+    flex-basis: 100%;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    padding: 0;
+}
+
+:root {
+    --break-point-min: 1000px;
+}
+@media (max-width: 1000px) {
+    .hide-sm {
+        display: none;
     }
 }

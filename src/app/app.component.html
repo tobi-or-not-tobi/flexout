@@ -1,34 +1,23 @@
 <h1>Flexout</h1>
 <p>Standardized flex layouts for CMS systems</p>
 <div class="demo">
-  <div class="fl">
-    <div>A</div>
-    <div>B</div>
-    <div>C</div>
-    <div>D</div>
-  </div>
 
-  <div class="fl">
-    <div>currency</div>
-    <div>language</div>
-    <div class="space-before">link A</div>
-    <div>link B</div>
-    <div>link C</div>
-    <div>link D</div>
-  </div>
+  <div class="page">
+    <div class="slot flexbox">
+      <div class="component">currency</div>
+      <div class="component">language</div>
+      <div class="component space-before hide-sm">link A</div>
+      <div class="component hide-sm">link B</div>
+      <div class="component hide-sm">link C</div>
+      <div class="component hide-sm">link D</div>
+    </div>
 
-  <!-- <div class="fl">
-    <div>logo-logo-logo-logo-logo</div>
-    <div class="space-before rem5">search</div>
-    <div class="space-before">my account</div>
-    <div>mini cart</div>
-  </div> -->
-
-  <div class="fl">
-    <div>logo-logo-logo-logo-logo</div>
-    <app-search-box></app-search-box>
-    <div>my account</div>
-    <app-mini-cart></app-mini-cart>
+    <div class="slot flexbox">
+      <div class="component">logo-logo-logo-logo-logo</div>
+      <app-search-box class="component"></app-search-box>
+      <div class="component">my account</div>
+      <app-mini-cart class="component"></app-mini-cart>
+    </div>
   </div>
 
 </div>
