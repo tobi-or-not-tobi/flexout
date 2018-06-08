@@ -3,6 +3,7 @@
 <div class="demo">
 
   <div class="page">
+    <h3>Page header with 2 slots</h3>
     <div class="slot flexbox">
       <div class="component">currency</div>
       <div class="component">language</div>
@@ -14,6 +15,22 @@
 
     <div class="slot flexbox">
       <div class="component">logo-logo-logo-logo-logo</div>
+      <app-search-box class="component"></app-search-box>
+      <div class="component">my account</div>
+      <app-mini-cart class="component"></app-mini-cart>
+    </div>
+  </div>
+
+  <div class="page">
+    <h3>Page header with ONE slot</h3>
+    <div class="slot flexbox">
+      <div class="component">currency</div>
+      <div class="component">language</div>
+      <div class="component hide-sm space-before">link A</div>
+      <div class="component hide-sm">link B</div>
+      <div class="component hide-sm">link C</div>
+      <div class="component hide-sm">link D</div>
+      <div class="component line-break-before">logo-logo-logo-logo-logo</div>
       <app-search-box class="component"></app-search-box>
       <div class="component">my account</div>
       <app-mini-cart class="component"></app-mini-cart>
