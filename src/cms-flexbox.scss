@@ -1,0 +1,15 @@
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    // align-content: center;
+    // justify-content: space-between;
+    .space-before {
+        margin-left: auto;
+        &.rem5 {
+            margin-left: 5rem;
+        }
+    }
+    .space-after {
+        margin-right: auto;
+    }
+}
