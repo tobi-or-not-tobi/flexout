@@ -32,11 +32,6 @@ export class LineBreakDirective {
             breakElement,
             this.elementRef.nativeElement.nextSibling
         );
-        // this.renderer.insertBefore(
-        //     this.elementRef.nativeElement.parentNode,
-        //     breakElement,
-        //     this.elementRef.nativeElement
-        // );
     }
 
     private createBreakElement(): Element {

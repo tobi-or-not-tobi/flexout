@@ -3,14 +3,21 @@
     flex-wrap: wrap;
     // align-content: center;
     // justify-content: space-between;
-    .space-before {
-        margin-left: auto;
-        &.rem5 {
-            margin-left: 5rem;
-        }
+    > * {
+        order: 1;
     }
-    .space-after {
-        margin-right: auto;
+    .space {
+        &-around,
+        &-before {
+            margin-left: auto;
+            &-5 {
+                margin-left: 5rem;
+            }
+        }
+        &-around,
+        &-after {
+            margin-right: auto;
+        }
     }
 
     div.line-break {
@@ -19,5 +26,24 @@
         height: 0px;
         overflow: hidden;
         padding: 0;
+    }
+}
+
+.order {
+    &-first {
+        &-sm {
+            @media (max-width: 1000px) {
+                order: 0;
+                border-color: red;
+            }
+        }
+    }
+    &-last {
+        &-sm {
+            @media (max-width: 1000px) {
+                order: 2;
+                border-color: red;
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@
         border: solid 1px #aaa;
         padding: 10px;
         background-color: #fff;
+
         .component {
             padding: 10px;
             background-color: #ddd;
@@ -19,5 +20,6 @@
 @media (max-width: 1000px) {
     .hide-sm {
         opacity: 0.2;
+        display: none;
     }
 }

@@ -3,7 +3,8 @@
 <div class="demo">
 
   <div class="page">
-    <h3>Page header with 2 slots</h3>
+    <h3>Page header with multiple slots</h3>
+
     <div class="slot flexbox">
       <div class="component">currency</div>
       <div class="component">language</div>
@@ -15,30 +16,61 @@
 
     <div class="slot flexbox">
       <div class="component">logo-logo-logo-logo-logo</div>
-      <app-search-box class="component"></app-search-box>
+      <div class="component space-around">search box</div>
       <div class="component">my account</div>
-      <app-mini-cart class="component"></app-mini-cart>
+      <div class="component line-break-after">mini cart</div>
     </div>
 
     <div class="slot flexbox">
-      <div class="component" *ngFor="let n of [1,2,3,4,5,6,7,8]">nav-{{n}}</div>
+      <div class="component">
+        navbar component
+      </div>
     </div>
   </div>
 
   <div class="page">
     <h3>Page header with ONE slot</h3>
+    <p>When all components are organized in single slot, we have the ability to reorder elements.</p>
     <div class="slot flexbox">
-      <div class="component">currency</div>
-      <div class="component">language</div>
+      <div class="component order-last-sm line-break-before">currency</div>
+      <div class="component order-last-sm">language</div>
       <div class="component hide-sm space-before">link A</div>
       <div class="component hide-sm">link B</div>
       <div class="component hide-sm">link C</div>
       <div class="component hide-sm">link D</div>
       <div class="component line-break-before">logo-logo-logo-logo-logo</div>
-      <app-search-box class="component"></app-search-box>
-      <div class="component">my account</div>
-      <app-mini-cart class="component line-break-after"></app-mini-cart>
-      <div class="component" *ngFor="let n of [1,2,3,4,5,6,7,8]">nav-{{n}}</div>
+      <div class="component space-around">search box</div>
+      <div class="component order-last-sm">my account</div>
+      <div class="component line-break-after">mini cart</div>
+      <div class="component">
+        navbar component
+        <!-- <span class="component" *ngFor="let n of [1,2,3,4,5,6,7,8]">nav-{{n}}</span> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <h3>Page header with multiple slot</h3>
+    <p>When all components are organized in single slot, we have the ability to reorder elements.</p>
+
+    <div class="slot flexbox">
+      <div class="component hide-sm">currency</div>
+      <div class="component hide-sm">language</div>
+      <div class="component space-before hide-sm">link A</div>
+      <div class="component hide-sm">link B</div>
+      <div class="component hide-sm">link C</div>
+      <div class="component hide-sm">link D</div>
+    </div>
+
+    <div class="slot flexbox">
+      <div class="component">logo-logo-logo-logo-logo</div>
+      <div class="component space-around">search box</div>
+      <div class="component hide-sm">my account</div>
+      <div class="component line-break-after">mini cart</div>
+      <div class="component line-break-before order-first-sm">
+        navbar component
+      </div>
+
     </div>
   </div>
 
